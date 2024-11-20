@@ -1,1 +1,77 @@
+:root {
+    --section-width: 1000px;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.cards-container > div {
+    width: 200px;
+    height: 200px;
+}
+
+.title,
+.hero-page,
+.cards-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.title,
+.hero-page,
+.random-info,
+.quote,
+.sign-up,
+.footer {
+    width: var(--section-width);
+    margin: 0px auto;
+}
+
+.title {
+    justify-content: space-between;
+    background-color: #1F2937;
+    color: #FFF;
+    padding: 10px 40px;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.links a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.hero-page {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1F2937;
+    color: white;   
+}
+.hero-page h1 {
+    font-size: 48px;
+}
+.hero-page p {
+    font-weight: 100;
+}
+.hero-page button {
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(62, 62, 253);
+    border-radius: 5px;
+}
