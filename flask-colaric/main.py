@@ -10,7 +10,6 @@ def hello_world():
     print(request.remote_addr)
     klic = requests.get("https://api.chucknorris.io/jokes/random").json()
     tole = (klic["value"])
-
     db.insert({'vic': tole})
     return render_template("index.html", spremenljivka = tole, elements = list(range(10)))
 
